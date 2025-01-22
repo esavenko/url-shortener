@@ -1,6 +1,6 @@
 import { useDark, useToggle } from '@vueuse/core'
 
-export const useThemes = () => {
+export function useThemes() {
   const isDark = useDark({
     storageKey: 'theme',
     valueDark: 'dark',
